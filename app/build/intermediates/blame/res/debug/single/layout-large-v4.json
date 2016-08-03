@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/res/merged/debug/layout-large-v4/main.xml",
+        "source": "/Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/res/layout-large/main.xml"
+    },
+    {
+        "merged": "/Volumes/ANDY32G 1/WifiDirect to Scan and Rename2/D:\\ant\\Android-WiFiBeacon-demo-master\\WifiDirect to Scan and Rename2\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-v4\\main.xml",
+        "source": "/Volumes/ANDY32G 1/WifiDirect to Scan and Rename2/D:\\ant\\Android-WiFiBeacon-demo-master\\WifiDirect to Scan and Rename2\\app\\src\\main\\res\\layout-large\\main.xml"
+    },
+    {
+        "merged": "/Volumes/ANDY32G 1/WifiDirect to Scan and Rename2/app/build/intermediates/res/merged/debug/layout-large-v4/main.xml",
+        "source": "/Volumes/ANDY32G 1/WifiDirect to Scan and Rename2/app/src/main/res/layout-large/main.xml"
+    },
+    {
+        "merged": "/Volumes/ANDY32G 2/WifiDirect to Scan and Rename2/app/build/intermediates/res/merged/debug/layout-large-v4/main.xml",
+        "source": "/Volumes/ANDY32G 2/WifiDirect to Scan and Rename2/app/src/main/res/layout-large/main.xml"
+    }
+]
