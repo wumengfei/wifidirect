@@ -21,8 +21,10 @@
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Holo">
         <activity
-            android:name=".WiFiDirectActivity"
-            android:label="@string/app_name" android:launchMode="singleTask">
+            android:name=".welcome1"
+            android:theme="@android:style/Theme.NoTitleBar"
+
+        android:label="@string/app_name" android:launchMode="singleTask">
             <intent-filter>
                 <action
                     android:name="android.intent.action.MAIN" />
@@ -31,11 +33,30 @@
             </intent-filter>
             
         </activity>
-        
-        
+
+        <activity
+            android:name=".mode_choose"
+            android:label="@string/app_name" android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name=".start"
+            android:label="@string/app_name" android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name=".start_car"
+            android:label="@string/app_name" android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name=".FgActivity"
+            android:label="@string/app_name" android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name=".WiFiDirectActivity"
+            android:label="@string/app_name" android:launchMode="singleTask">
+        </activity>
        
         <!-- Used for transferring files  after a successful connection -->
-        <!--<service android:enabled="true" android:name=".FileTransferService" />-->
+        <service android:enabled="true" android:name=".FileTransferService" />
 
     </application>
 </manifest>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg2"
+    android:weightSum="1">
+
+
+    <Button
+        android:id="@+id/start_car"
+        android:text="开始检测"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_click"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="420dp" />
+
+    <TextView
+        android:id="@+id/PinPai1"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="汽车品牌："
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp" />
+
+    <EditText
+        android:id="@+id/PinPai2"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="请输入您的汽车品牌"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="170dp" />
+
+    <TextView
+        android:id="@+id/XingHao1"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="汽车型号："
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp" />
+
+    <EditText
+        android:id="@+id/XingHao2"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="请输入您的汽车型号"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="170dp" />
+
+    <TextView
+        android:id="@+id/ChePaiHao1"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="车牌号："
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp" />
+
+
+    <EditText
+        android:id="@+id/ChePaiHao2"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="请输入车牌号"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="170dp" />
+    <TextView
+        android:id="@+id/Color1"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="颜色："
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="30dp" />
+
+    <EditText
+        android:id="@+id/Color2"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="请输入您的汽车颜色"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="170dp" />
+</RelativeLayout>

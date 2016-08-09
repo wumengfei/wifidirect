@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg1"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎使用WiFi-Horn"
+        android:id="@+id/welText1"
+        android:textSize="60px"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:layout_marginTop="160dp"
+        android:typeface="monospace"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择您当前的模式"
+        android:id="@+id/welText2"
+        android:textSize="60px"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:layout_marginTop="200dp"
+        android:typeface="monospace"
+        />
+
+    <Button
+        android:id="@+id/pedestrian"
+        android:text="行人模式"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_click"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+    />
+
+    <Button
+        android:id="@+id/car"
+        android:text="驾驶模式"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_click"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="330dp"
+
+        />
+</RelativeLayout>
+

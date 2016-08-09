@@ -1,18 +1,15 @@
 package com.example.android.wifidirect;
 
 
-import android.Manifest;
 import android.app.ListFragment;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.pm.PackageManager;
 import android.location.Criteria;
 import android.net.wifi.p2p.WifiP2pDevice;
 import android.net.wifi.p2p.WifiP2pDeviceList;
 import android.net.wifi.p2p.WifiP2pManager.PeerListListener;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,7 +22,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
-
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -52,7 +48,6 @@ public class DeviceListFragment extends ListFragment implements PeerListListener
     private Gps otherGps = new Gps();
     private CollisionPrediction1 cp = new CollisionPrediction1();
     private int collisionFlag;
-    String collisionState;
     String provider;
 
     DecimalFormat dfSpeed = new DecimalFormat("00.0");
@@ -61,22 +56,11 @@ public class DeviceListFragment extends ListFragment implements PeerListListener
 
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         mLocationManager = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
         criteria.setAccuracy(Criteria.ACCURACY_FINE);
         provider = mLocationManager.getBestProvider(criteria, true); // 获取GPS信息
-        if (ActivityCompat.checkSelfPermission(this.getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
-                && ActivityCompat.checkSelfPermission(this.getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            return;
-        }
         mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 500, 0, mLocationListener);
         mLocation = mLocationManager.getLastKnownLocation(provider);
     }
@@ -91,7 +75,7 @@ public class DeviceListFragment extends ListFragment implements PeerListListener
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mContentView = inflater.inflate(R.layout.device_list, null);
         return mContentView;
-
+        
     }
 
     public WifiP2pDevice getDevice() {
@@ -102,6 +86,7 @@ public class DeviceListFragment extends ListFragment implements PeerListListener
 
         @Override
         public void onStatusChanged(String provider, int status, Bundle extras) {
+
         }
 
         @Override
@@ -170,7 +155,9 @@ public class DeviceListFragment extends ListFragment implements PeerListListener
 //                    bottom.setText(device.deviceAddress);
 //                }
                 if(top!=null && bottom!=null){
-
+                    //textView 显示ssid及mac地址
+                    top.setText(device.deviceName);
+                    bottom.setText(device.deviceAddress);
                     if(device.deviceName.indexOf("C2X")!=-1){
                         otherGps.setCarId("otherCar");
                         otherGps.setGpsTime(1);
@@ -195,26 +182,15 @@ public class DeviceListFragment extends ListFragment implements PeerListListener
                         cp.setData1(myGps);
                         cp.setData2(otherGps);
                         collisionFlag = cp.collisionDirection();
-//                        if (collisionFlag == 0)
-//                            collision.setText("normal");
-//                        else if(collisionFlag == 1)
-//                            collision.setText("left");
-//                        else if(collisionFlag == 2)
-//                            collision.setText("right");
-//                        else
-//                            collision.setText("error");
                         if (collisionFlag == 0)
-                            collisionState = "normal";
+                            collision.setText("normal");
                         else if(collisionFlag == 1)
-                            collisionState = "left";
+                            collision.setText("left");
                         else if(collisionFlag == 2)
-                            collisionState = "right";
+                            collision.setText("right");
                         else
-                            collisionState = "error";
+                            collision.setText("error");
 
-                        //textView 显示ssid及mac地址
-                        top.setText(device.deviceName + " " + collisionState);
-                        bottom.setText(device.deviceAddress);
 
                     }else{
                        // Toast.makeText(this.getContext(), device.deviceName, Toast.LENGTH_SHORT).show();

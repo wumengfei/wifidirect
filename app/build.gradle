@@ -16,6 +16,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+    productFlavors{
+        flavors_release{
+            manifestPlaceholders = [str:"releaseStr",package_name:"com.example.android.wifidirect"]
+            applicationId "com.example.android.wifidirect"
+        }
+    }
 }
 
 dependencies {

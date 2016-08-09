@@ -1,0 +1,179 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:2:1-62:12
+	package
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:2:70-110
+		INJECTED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:3:29-54
+		INJECTED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml
+	android:versionCode
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:3:5-28
+		INJECTED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:5:15-41
+		INJECTED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:6:5-76
+	android:name
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:6:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:7:5-76
+	android:name
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:7:22-73
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:8:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:9:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:10:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:11:5-75
+	android:name
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:11:22-72
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:12:22-78
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:13:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:14:5-78
+	android:name
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:14:22-76
+uses-feature#android.hardware.wifi.direct
+ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:17:5-88
+	android:required
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:17:63-86
+	android:name
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:17:19-62
+application
+ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:19:5-61:19
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:21:9-41
+	android:icon
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:20:9-45
+	android:theme
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:22:9-50
+activity#com.example.android.wifidirect.welcome1
+ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:23:9-35:20
+	android:label
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:27:9-41
+	android:launchMode
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:27:42-73
+	android:theme
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:25:13-60
+	android:name
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:24:13-37
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:28:13-33:29
+action#android.intent.action.MAIN
+ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:29:17-30:65
+	android:name
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:30:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:31:17-32:71
+	android:name
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:32:21-68
+activity#com.example.android.wifidirect.mode_choose
+ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:37:9-40:20
+	android:label
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:39:13-45
+	android:launchMode
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:39:46-77
+	android:name
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:38:13-40
+activity#com.example.android.wifidirect.start
+ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:41:9-44:20
+	android:label
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:43:13-45
+	android:launchMode
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:43:46-77
+	android:name
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:42:13-34
+activity#com.example.android.wifidirect.start_car
+ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:45:9-48:20
+	android:label
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:47:13-45
+	android:launchMode
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:47:46-77
+	android:name
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:46:13-38
+activity#com.example.android.wifidirect.FgActivity
+ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:49:9-52:20
+	android:label
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:51:13-45
+	android:launchMode
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:51:46-77
+	android:name
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:50:13-39
+activity#com.example.android.wifidirect.WiFiDirectActivity
+ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:53:9-56:20
+	android:label
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:55:13-45
+	android:launchMode
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:55:46-77
+	android:name
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:54:13-47
+service#com.example.android.wifidirect.FileTransferService
+ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:59:9-79
+	android:enabled
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:59:18-40
+	android:name
+		ADDED from /Users/Murphy/AndroidStudioProjects/WifiDirect to Scan and Rename2/app/src/main/AndroidManifest.xml:59:41-76
