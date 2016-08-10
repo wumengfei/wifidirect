@@ -22,6 +22,7 @@ public class mode_choose extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mode_choose);
         //final Intent it = new Intent(mode_choose.this, WiFiDirectActivity.class); //��Ҫת���Activity
+        //行人模式下要检测人-车
         pedestrian = (Button) findViewById(R.id.pedestrian);
         pedestrian.setOnClickListener(new View.OnClickListener() {
 
@@ -32,11 +33,13 @@ public class mode_choose extends Activity{
                 String flag = "C1X";
                 Bundle bundle = new Bundle();
                 bundle.putString("flag",flag);
+                bundle.putString("mode","行人模式");
                 intent1.putExtras(bundle);
                 startActivity(intent1);
                 finish();
             }
         });
+        //驾驶模式下要检测车-车&车-人
         car = (Button) findViewById(R.id.car);
         car.setOnClickListener(new View.OnClickListener() {
 
@@ -47,6 +50,7 @@ public class mode_choose extends Activity{
                 String flag = "C2X";
                 Bundle bundle = new Bundle();
                 bundle.putString("flag",flag);
+                bundle.putString("mode","驾驶模式");
                 intent2.putExtras(bundle);
                 startActivity(intent2);
                 finish();

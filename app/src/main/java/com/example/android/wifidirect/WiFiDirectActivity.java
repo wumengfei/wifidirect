@@ -42,7 +42,10 @@ public class WiFiDirectActivity extends Activity implements  DeviceActionListene
 	private Timer timer;
 	private OneTask task;
 	private TextView time1;
-
+    //将模式传入
+    Bundle bd=getIntent().getExtras();
+    public String flag = bd.getString("flag");
+    public String mode = bd.getString("mode");
 
     public void setIsWifiP2pEnabled(boolean isWifiP2pEnabled) {
         this.isWifiP2pEnabled = isWifiP2pEnabled;
@@ -52,6 +55,8 @@ public class WiFiDirectActivity extends Activity implements  DeviceActionListene
     public void onCreate(Bundle savedInstanceState) {    	
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
+
 
         intentFilter.addAction(WifiP2pManager.WIFI_P2P_STATE_CHANGED_ACTION);
         intentFilter.addAction(WifiP2pManager.WIFI_P2P_PEERS_CHANGED_ACTION);

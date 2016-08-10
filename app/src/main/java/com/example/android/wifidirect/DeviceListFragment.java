@@ -1,15 +1,18 @@
 package com.example.android.wifidirect;
 
 
+import android.Manifest;
 import android.app.ListFragment;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.pm.PackageManager;
 import android.location.Criteria;
 import android.net.wifi.p2p.WifiP2pDevice;
 import android.net.wifi.p2p.WifiP2pDeviceList;
 import android.net.wifi.p2p.WifiP2pManager.PeerListListener;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,6 +25,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -46,6 +50,7 @@ public class DeviceListFragment extends ListFragment implements PeerListListener
     private Criteria criteria = new Criteria();
     private Gps myGps = new Gps();
     private Gps otherGps = new Gps();
+    //用了CP1而不是CP
     private CollisionPrediction1 cp = new CollisionPrediction1();
     private int collisionFlag;
     String provider;
@@ -56,11 +61,21 @@ public class DeviceListFragment extends ListFragment implements PeerListListener
 
 
     @Override
-    public void onCreate(Bundle savedInstanceState){
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mLocationManager = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
         criteria.setAccuracy(Criteria.ACCURACY_FINE);
         provider = mLocationManager.getBestProvider(criteria, true); // 获取GPS信息
+        if (ActivityCompat.checkSelfPermission(this.getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this.getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
         mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 500, 0, mLocationListener);
         mLocation = mLocationManager.getLastKnownLocation(provider);
     }
@@ -200,7 +215,7 @@ public class DeviceListFragment extends ListFragment implements PeerListListener
             return v;
         }
     }
-
+    //更改deviceName
     public void updateThisDevice(WifiP2pDevice device) {
         if(device!= null){
             this.device = device;
@@ -209,11 +224,12 @@ public class DeviceListFragment extends ListFragment implements PeerListListener
             // 以下均为本机的时间以及gps信息
             String sLatitude=String.valueOf(dfLa.format(lat));
             String sLongitude=String.valueOf(dfLa.format(lng));
+            //没有gps信号的情况下不会闪退
             if(sLatitude=="0.0"||sLongitude=="0.0"){
                 sLatitude="111.000000000";
                 sLongitude="111.11111111";
             }
-            String rename="C2X";         //所有WHIP结构均以“C2X”开头；时间，保留分和秒，共4位 +getDate()
+            String rename = "C2X";         //所有WHIP结构均以“C2X”开头；时间，保留分和秒，共4位 +getDate()
             rename+=String.valueOf(dfSpeed.format(speed));//速度保留一位小数，算小数点4位，单位m/s
             rename+=String.valueOf(dfBear.format(bearing));//方向角取整，3位
 //            rename+="0000011111";
