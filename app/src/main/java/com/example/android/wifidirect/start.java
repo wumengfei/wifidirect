@@ -27,7 +27,7 @@ public class start extends Activity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Intent intent = new Intent(start.this, FgActivity.class);
+                Intent intent = new Intent(start.this, WiFiDirectActivity.class);
 
                 Bundle bundle = new Bundle();
                 bundle.putString("flag",flag);

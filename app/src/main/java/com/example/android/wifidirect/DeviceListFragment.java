@@ -243,6 +243,7 @@ public class DeviceListFragment extends ListFragment implements PeerListListener
             ((DeviceActionListener) getActivity()).changeWifiDirectName(rename);
             TextView view_1 = (TextView) mContentView.findViewById(R.id.my_address);
             Log.d("test2", "device == null ? "+ (device == null));
+            Log.d("test2","updateThisDevice");
             view_1.setText(device.deviceAddress);
         }
 

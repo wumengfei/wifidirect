@@ -43,9 +43,9 @@ public class WiFiDirectActivity extends Activity implements  DeviceActionListene
 	private OneTask task;
 	private TextView time1;
     //将模式传入
-    Bundle bd=getIntent().getExtras();
-    public String flag = bd.getString("flag");
-    public String mode = bd.getString("mode");
+//    Bundle bd=getIntent().getExtras();
+//    public String flag = bd.getString("flag");
+//    public String mode = bd.getString("mode");
 
     public void setIsWifiP2pEnabled(boolean isWifiP2pEnabled) {
         this.isWifiP2pEnabled = isWifiP2pEnabled;
@@ -54,9 +54,11 @@ public class WiFiDirectActivity extends Activity implements  DeviceActionListene
     @Override
     public void onCreate(Bundle savedInstanceState) {    	
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.fragment_left);
 
-
+        Bundle bd = getIntent().getExtras();
+        String flag = bd.getString("flag");
+        String mode = bd.getString("mode");
 
         intentFilter.addAction(WifiP2pManager.WIFI_P2P_STATE_CHANGED_ACTION);
         intentFilter.addAction(WifiP2pManager.WIFI_P2P_PEERS_CHANGED_ACTION);
@@ -65,15 +67,14 @@ public class WiFiDirectActivity extends Activity implements  DeviceActionListene
 
         manager = (WifiP2pManager) getSystemService(Context.WIFI_P2P_SERVICE);
         channel = manager.initialize(this, getMainLooper(), null);
-
-
         receiver = new WiFiDirectBroadcastReceiver(manager, channel, this);
 
-		start = (Button) findViewById(R.id.button1);
+		start = (Button) findViewById(R.id.button_on);
 		start.setOnClickListener(this);
-		stop = (Button) findViewById(R.id.button2);
+		stop = (Button) findViewById(R.id.button_end);
 		stop.setOnClickListener(this);
-		time1 = (TextView) findViewById(R.id.time);
+		time1 = (TextView) findViewById(R.id.mode);
+        time1.setText("当前模式："+mode);
 
 		mHandler = new Handler(){
 			@Override
@@ -85,6 +86,7 @@ public class WiFiDirectActivity extends Activity implements  DeviceActionListene
     }
 
     class OneTask extends TimerTask{
+
 		@Override
 		public void run() {
 			  if (!isWifiP2pEnabled) {
@@ -95,10 +97,12 @@ public class WiFiDirectActivity extends Activity implements  DeviceActionListene
               //        .findFragmentById(R.id.frag_list);
 
               manager.discoverPeers(channel, new WifiP2pManager.ActionListener() {
+
                   @Override
                   public void onSuccess() {
                       //Toast.makeText(WiFiDirectActivity.this, "Discovery Initiated",
-                             // Toast.LENGTH_SHORT).show();
+                             // Toast.LENGTH_SHORT).show()
+                    Log.d("found","found");
               	    time1.setText(getDate());
 
                   }
@@ -198,7 +202,7 @@ public class WiFiDirectActivity extends Activity implements  DeviceActionListene
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
-		case R.id.button1:
+		case R.id.button_on:
 			//timer.schedule(task,500,2000);
 //            if(timer == null){
 //                timer = new Timer();
@@ -208,9 +212,9 @@ public class WiFiDirectActivity extends Activity implements  DeviceActionListene
 //                timer.schedule(task,500,1000);
 //            }
             receiver.startTimer();
-
+            Log.d("button", "开始检测");
             break;
-		case R.id.button2:
+		case R.id.button_end:
 			//timer.cancel();
 //            if (timer != null){
 //                timer.cancel();
@@ -222,6 +226,7 @@ public class WiFiDirectActivity extends Activity implements  DeviceActionListene
 //                }
 //            }
             receiver.stopTimer();
+            Log.d("button", "结束检测");
 			break;
 		}
 	}
